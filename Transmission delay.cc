@@ -63,7 +63,7 @@ void MyVeinsApp::handleSelfMsg(cMessage* msg)
         beacon->setTime(simTime());
 
         //Set length based on scheme message size
-        beacon->setByteLength(Message length);
+        beacon->setByteLength(length);
 
         BaseFrame1609_4* WSM = new BaseFrame1609_4();
          
@@ -109,7 +109,7 @@ void MyVeinsApp::processMessageQueue() {
 
                     totalPacketsReceived++;
                     totalDelay += time3.dbl();
-                    simtime_t time4=totalDelay;
+                    
                     delete msg; 
     }
 }
