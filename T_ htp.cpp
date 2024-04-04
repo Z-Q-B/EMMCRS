@@ -23,11 +23,11 @@ int main()
 		clock_t start, end;
 		double time;
 
-		char a='123';
+		char text[] = "example text";
 		G1 P;
 
 		start = clock();
-		pfc.hash_and_map(P,&a);
+		pfc.hash_and_map(P,(char*)text);
 		end = clock();
 		time = double(end - start) / CLOCKS_PER_SEC;
 		sum = sum + time;
