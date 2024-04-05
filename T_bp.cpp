@@ -13,6 +13,7 @@ extern "C"
 #include "mirdef.h"
 }
 #pragma comment(lib,"miracl.lib")
+
 int main()
 {
 	double sum = 0.0;
