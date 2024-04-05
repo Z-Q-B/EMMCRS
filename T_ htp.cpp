@@ -37,7 +37,7 @@ std::string generateRandomString(size_t length) {
 int main() {
     double sum = 0.0;
     double time=0.0;
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10000; i++) {
         PFC pfc(AES_SECURITY);
         Big order = pfc.order();
         miracl* mip = get_mip();
@@ -54,7 +54,7 @@ int main() {
         sum += time;
     }
 
-    printf("%lf", sum / 10);
+    printf("%lf", sum / 10000);
 
     return 0;
 }
