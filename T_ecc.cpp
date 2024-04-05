@@ -3,7 +3,6 @@ extern "C"
 {
 #include "miracl.h"
 #include "mirdef.h"
-
 }
 #pragma comment(lib,"miracl.lib")
 #include <cstring>
