@@ -44,7 +44,7 @@ int main() {
         clock_t start, end;
         double time;
 
-        std::string randomText = generateRandomString(12); 
+        std::string randomText = generateRandomString(160); 
         G1 P;
 
         start = clock();
