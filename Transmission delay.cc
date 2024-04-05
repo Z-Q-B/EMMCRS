@@ -27,8 +27,6 @@ void MyVeinsApp::initialize(int stage)
 
 void MyVeinsApp::finish()
 {
-
-
     DemoBaseApplLayer::finish();
 
     simtime_t time4=totalDelay;
