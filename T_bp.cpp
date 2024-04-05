@@ -37,3 +37,6 @@ int main()
 		sum = sum + time;
 }
 	printf("%lf", sum/10000 );
+	
+        return 0;
+}
