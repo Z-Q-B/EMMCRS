@@ -1,2 +1,2 @@
-In the Miracl library, by executing 'T_bp.cpp', 'T_pm.cpp', 'T_ecc.cpp', 'T_ep.cpp', and 'T_htp.cpp' respectively, one can calculate the average execution time for ten thousand iterations of the corresponding cryptographic operations. 
+In the MIRACL library, by executing 'T_bp.cpp', 'T_pm.cpp', 'T_ecc.cpp', 'T_ep.cpp', and 'T_htp.cpp' respectively, one can calculate the average execution time for ten thousand iterations of the corresponding cryptographic operations. 
 For calculating the transmission delay, simply replace the 'Transmission_delay.cc' file with the 'veins/modules/application/trace/MyVeinsApp.cc' file in the Veins simulation platform.
