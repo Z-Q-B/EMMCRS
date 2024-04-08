@@ -53,7 +53,7 @@ extern "C"
             double time = double(end - start) / CLOCKS_PER_SEC;
             sum = sum + time;
         }
-        printf("%lf", sum / 10000);
+        printf("ecc: %.3lf ms \n", sum / 10);
 
         mirkill(p);
         mirkill(a);
