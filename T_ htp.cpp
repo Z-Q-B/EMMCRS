@@ -54,7 +54,7 @@ int main() {
         sum += time;
     }
 
-    printf("%lf", sum / 10000);
+    printf("htp: %.3lf ms \n", sum / 10);
 
     return 0;
 }
