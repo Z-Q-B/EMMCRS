@@ -29,9 +29,9 @@ void MyVeinsApp::finish()
 {
     DemoBaseApplLayer::finish();
 
-    simtime_t time4=totalDelay;
+    simtime_t AverageDelay=totalDelay;
  
-    EV << "time:"<<time4/totalPacketsReceived<< std::endl;
+    EV << "Average delay:"<<AverageDelay/totalPacketsReceived<< std::endl;
 
     // statistics recording goes here
 }
@@ -101,12 +101,12 @@ void MyVeinsApp::processMessageQueue() {
 
             cPacket* enc = WSM->getEncapsulatedPacket();
                     Beacon* bc = check_and_cast<Beacon*>(enc);
-                    simtime_t time1=bc->getTime();
-                    simtime_t time2=simTime();
-                    simtime_t time3=time2-time1;
+                    simtime_t delay1=bc->getTime();
+                    simtime_t delay2=simTime();
+                    simtime_t delay3=delay2-delay1;
 
                     totalPacketsReceived++;
-                    totalDelay += time3.dbl();
+                    totalDelay += delay3.dbl();
                     
                     delete msg; 
     }
