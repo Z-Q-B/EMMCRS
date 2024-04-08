@@ -31,7 +31,7 @@ void MyVeinsApp::finish()
 
     simtime_t time4=totalDelay;
  
-    EV << "time:"<<time4/totalPacketsReceived*1000<< std::endl;
+    EV << "time:"<<time4/totalPacketsReceived<< std::endl;
 
     // statistics recording goes here
 }
