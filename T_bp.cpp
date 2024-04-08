@@ -36,7 +36,7 @@ int main()
 		time = double(end - start) / CLOCKS_PER_SEC;
 		sum = sum + time;
 }
-	printf("%lf", sum/10000 );
+	  printf("bp: %.3lf ms \n", sum / 10);
 	
         return 0;
 }
